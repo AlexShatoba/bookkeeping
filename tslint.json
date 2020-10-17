@@ -1,5 +1,5 @@
 {
-  "extends": "tslint:recommended",
+  "extends": ["tslint:recommended", "@saritasa/tslint-config-angular"],
   "rules": {
     "align": {
       "options": [
