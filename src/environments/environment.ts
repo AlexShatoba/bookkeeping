@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiEndpoint: '',
+  apiEndpoint: 'https://bookkeeping-d0b62.firebaseio.com',
   assetsEndpoint: ''
 };
 
