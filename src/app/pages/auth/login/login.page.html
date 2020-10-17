@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar> <ion-title>login</ion-title> </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="form" (ngSubmit)="login(form)">
+    <div class="logo"> <img src="" alt="" /> </div>
+    <div class="inputs">
+      <div class="email">
+        <ion-input formControlName="email" placeholder="Email" inputmode="email" required></ion-input>
+      </div>
+      <div class="email">
+        <ion-input formControlName="password" placeholder="Password" type="password" required></ion-input>
+      </div>
+    </div>
+    <div class="buttons">
+      <ion-button class="login-button" type="submit" [disabled]="isAuthInProgress$ | async">Login</ion-button>
+      <ion-button class="create-account">Create account</ion-button>
+    </div>
+  </form>
+</ion-content>
